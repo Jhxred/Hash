@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8ed;
+  color: #3d2b1f;
+}
+
+header {
+  background: #e9a23b;
+  text-align: center;
+  padding: 22px 12px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header p {
+  margin: 8px 0 16px;
+}
+
+nav a {
+  color: #3d2b1f;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 45px auto;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.hero h2, .content h2 {
+  color: #9b4d16;
+  font-size: 28px;
+}
+
+.hero p {
+  line-height: 1.6;
+}
+
+.potato {
+  font-size: 110px;
+  background: #ffe2a8;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  min-width: 190px;
+}
+
+.button {
+  display: inline-block;
+  background: #9b4d16;
+  color: white;
+  padding: 11px 17px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #71350e;
+}
+
+.content {
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.menu-item {
+  background: white;
+  border: 1px solid #edcfaa;
+  border-radius: 10px;
+  padding: 20px 15px;
+  width: 30%;
+  box-shadow: 0 2px 5px #00000010;
+}
+
+.food {
+  font-size: 45px;
+}
+
+.menu-item h3 {
+  color: #9b4d16;
+}
+
+.menu-item p, .about p {
+  line-height: 1.6;
+}
+
+.menu-item strong {
+  font-size: 20px;
+}
+
+.note {
+  font-size: 13px;
+  color: #725d4d;
+  margin-top: 25px;
+}
+
+.about {
+  max-width: 750px;
+}
+
+.contact {
+  margin-top: 30px;
+  padding: 15px;
+  background: #ffe9c6;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  background: #3d2b1f;
+  color: white;
+  padding: 14px;
+  margin-top: 40px;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    width: 90%;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 7px;
+  }
+}
